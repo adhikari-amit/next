@@ -1,0 +1,179 @@
+.dimmed {
+    color: #1e2761;
+    font-weight: 600;
+}
+
+.btn-footer {
+    border-radius: 50%;
+}
+
+
+.btn-footer:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.fab :hover {
+    text-decoration: none;
+    color: white;
+}
+
+.about_image {
+    animation: profile_animate 8s ease-in-out infinite 1s;
+
+}
+
+
+.sticky-social {
+    position: fixed;
+    top: 30%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+}
+
+.social {
+    list-style: none;
+}
+
+.social li {
+    padding: 10px 10px;
+    font-size: 25px;
+    transition: all 0.8s ease-in-out;
+}
+
+.social li:hover {
+    margin-right: -30px;
+    box-shadow: 2px 5px 10px grey;
+}
+
+.social li:hover .fa {
+    margin-left: 20px;
+
+}
+
+.fa {
+    color: #fff;
+    transition: all 0.8s ease-in-out;
+}
+
+.linkedin {
+    background-color: #3C5A98;
+}
+
+.twitter {
+    background-color: #1EA1F2;
+}
+
+.insta {
+    background-color: #DC4F42;
+}
+
+.github {
+    background-color: #000000;
+}
+
+.vim {
+    background-color: #59BFBE;
+}
+
+#alert {
+    color: red;
+}
+#success {
+    color: 	#42ba96;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 142px;
+    height: 40px;
+    margin: -20px 0 0 -71px;
+    background: rgba(255, 255, 255, 0.76);
+    filter: contrast(20);
+    z-index: 2;
+}
+
+.dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 5px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite;
+}
+
+.dots {
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite;
+}
+
+.dots>span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+}
+
+@keyframes dot {
+    50% {
+        transform: translateX(96px);
+    }
+}
+
+@keyframes dots {
+    50% {
+        transform: translateX(-31px);
+    }
+}
+
+@keyframes profile_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+
+@media (max-width:991px) {
+    .sticky-social{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .sticky-social{
+        display: none;
+    }
+}
+
+@media (max-width:580px) {
+    .sticky-social{
+        display: none;
+    }
+}
+
+@media (max-width:320px) {
+    .sticky-social{
+        display: none;
+    }
+}
